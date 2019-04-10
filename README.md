@@ -19,6 +19,17 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite>
 ```
 
+You can also connect to a specific database
+
+```shell
+$ wapm run sqlite chinook.db
+wasmer-release run sqlite.wasm -- chinook.db
+SQLite version 3.27.2 2019-02-25 16:06:06
+Enter ".help" for usage hints.
+sqlite>
+```
+
+
 ## Building from Source
 
 You will need Emscripten SDK (emsdk) to build the `php.wasm` file.
