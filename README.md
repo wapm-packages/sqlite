@@ -1,14 +1,34 @@
-# SQLite CLI in WASM
+# SQLite
+
+You can install php with:
+
+```shell
+wapm install sqlite
+```
+
+## Running
+
+You can run sqlite cli
+
+```shell
+$ wapm run sqlite
+SQLite version 3.27.2 2019-02-25 16:06:06
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite>
+```
+
+## Building from Source
+
+You will need Emscripten SDK (emsdk) to build the `php.wasm` file.
+
+Steps:
+
+1. Setup emsdk (>= 1.38.11), see [Installation Instructions](https://github.com/juj/emsdk#installation-instructions)
+2. Run `bash build.sh`
 
 Build script inspired by [pib](https://github.com/oraoto/pib)
-
-## Building
-
-You'll need `emcc` set up to run the install script
-
-then run `./build.sh`
-
-## Status
 
 ### What works
 

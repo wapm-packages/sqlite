@@ -1,0 +1,11 @@
+[module]
+name = "sqlite"
+version = "0.1.0"
+description = "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
+readme = "README.md"
+module = "sqlite.wasm"
+repository = "https://github.com/wapm-packages/sqlite"
+abi = "Emscripten"
+
+[[command]]
+name = "sqlite"
