@@ -1,11 +1,22 @@
-[module]
+[package]
 name = "sqlite"
-version = "0.1.0"
+version = "0.2.0"
 description = "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
 readme = "README.md"
-module = "sqlite.wasm"
 repository = "https://github.com/wapm-packages/sqlite"
-abi = "Emscripten"
+
+[[module]]
+name = "sqlite"
+source = "build/sqlite.wasm"
+abi = "wasi"
+
+[module.interfaces]
+wasi = "0.0.0-unstable"
 
 [[command]]
 name = "sqlite"
+module = "sqlite"
+
+[[command]]
+name = "sqlite3"
+module = "sqlite"

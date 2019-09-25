@@ -1,6 +1,6 @@
 # SQLite
 
-You can install php with:
+You can install sqlite with:
 
 ```shell
 wapm install sqlite
@@ -8,11 +8,11 @@ wapm install sqlite
 
 ## Running
 
-You can run sqlite cli
+You can run the sqlite CLI
 
 ```shell
-$ wapm run sqlite
-SQLite version 3.27.2 2019-02-25 16:06:06
+$ wapm run sqlite --dir=.
+SQLite version 3.26.0 2018-12-01 12:34:55
 Enter ".help" for usage hints.
 Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
@@ -22,9 +22,9 @@ sqlite>
 You can also connect to a specific database
 
 ```shell
-$ wapm run sqlite chinook.db
+$ wapm run sqlite --dir=. chinook.db
 wasmer-release run sqlite.wasm -- chinook.db
-SQLite version 3.27.2 2019-02-25 16:06:06
+SQLite version 3.26.0 2018-12-01 12:34:55
 Enter ".help" for usage hints.
 sqlite>
 ```
@@ -32,23 +32,5 @@ sqlite>
 
 ## Building from Source
 
-You will need Emscripten SDK (emsdk) to build the `php.wasm` file.
-
 Steps:
-
-1. Setup emsdk (>= 1.38.11), see [Installation Instructions](https://github.com/juj/emsdk#installation-instructions)
-2. Run `bash build.sh`
-
-Build script inspired by [pib](https://github.com/oraoto/pib)
-
-### What works
-
-- Basic queries
-- Loading databases from file
-
-
-### What doesn't work
-
-- Running the final compilation step with optimization
-
-Unknown (TODO: run sqlite tests and see if anything breaks)
+1. Run `bash build.sh`
