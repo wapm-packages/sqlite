@@ -6,6 +6,8 @@ You can install sqlite with:
 wapm install sqlite
 ```
 
+> Note: this repo is inspired by Eric Synk [sqlite3 adaptation for wasm2cil](https://github.com/ericsink/wasm2cil/tree/master/sqlite3).
+
 ## Running
 
 You can run the sqlite CLI
