@@ -1,6 +1,4 @@
 sqlite-autoconf-*
-/wasi-sdk-5.0
-/wasi-sdk-5.0.tar.gz
 /build
 .DS_Store
 /wapm_packages

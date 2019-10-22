@@ -1,6 +1,6 @@
 [package]
 name = "sqlite"
-version = "0.2.1"
+version = "0.2.2"
 description = "SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine"
 readme = "README.md"
 repository = "https://github.com/wapm-packages/sqlite"

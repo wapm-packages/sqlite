@@ -34,5 +34,7 @@ sqlite>
 
 ## Building from Source
 
+You can build SQLite from source very easily with [wasienv](https://github.com/wasienv/wasienv).
+
 Steps:
 1. Run `bash build.sh`

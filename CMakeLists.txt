@@ -19,7 +19,7 @@ add_definitions(
     -DSQLITE_OS_OTHER
 )
 
-add_executable(sqlite.wasm
+add_executable(sqlite
     src/vfs.c
     src/os.c
     src/shell.c
